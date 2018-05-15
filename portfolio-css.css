@@ -5,7 +5,7 @@ body{
 }
 @font-face {
     font-family: Moon-Bold;
-    src: url(https://github.com/d4rksilicon/d4rksilicon.github.io/blob/master/Moon%20Bold.otf);
+    src: url(MoonBold.otf);
 }
 .problem {text-align:center;}
 .enclose {position: fixed;bottom:0px;width:100%;}
