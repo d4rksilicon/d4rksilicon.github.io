@@ -1,0 +1,172 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+var scrolling;
+$(window).scroll(function() {
+    clearTimeout(scrolling);
+    $("#footer").hide();
+    scrolling = setTimeout(function(){$("#footer").show();},1000);
+})
+
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title> This is Sparta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="portfolio-css.css">
+</head>
+
+
+<body >
+  <section>
+  <div class=" container-fluid">
+    <header>
+
+<div class="topnav" id="myTopnav">
+
+  <a href="https://raw.githubusercontent.com/d4rksilicon/d4rksilicon.github.io/master/images/myCV.png"target="_blank">RESUME</a>
+  <a style="color:#000000;"href="https://www.behance.net/masroor13194cc"target="_blank">PROJECTS</a>
+  <a href="#contact">CONTACT</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+</header>
+
+
+<svg id="svg-img" class="img-responsive img-class" viewBox="0 0 146 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M60.5229588,163 C106.638735,163 144.022959,126.511207 144.022959,81.5 C144.022959,36.4887929 106.638735,0 60.5229588,0 C36.705465,0 -0.498639193,12.6925436 0.00506165436,37.8312642 C0.508762502,62.9699847 0.508762502,94.3627285 0.508762502,125.810794 C0.508762502,157.258859 36.9671637,163 60.5229588,163 Z" id="path-1"></path>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-439.000000, -118.000000)">
+            <g id="Profile-pic" transform="translate(440.000000, 119.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Oval" stroke="#979797" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <image id="Screen-Shot" mask="url(#mask-2)" x="-1" y="-10" width="183" height="183" xlink:href="/Users/masroormattu/Desktop/my/dp.png"</image>
+            </g>
+        </g>
+    </g>
+</svg>
+
+<div class="profile-name">
+  <p>Masroor Mattu</p>
+</div>
+
+  <p id="abt" class="about">Hi! I am an aspiring creative professional who wants to work in the field of Human Centered Design. I am passionate about design, creative coding and filmmaking.<br><br>
+
+I am a 2017 graduate from <a id="college" href="https://www.iiitd.ac.in" target="_blank">IIIT Delhi</a>, majored in ECE. Currently working at <a id="groceri"href="http://groceristar.herokuapp.com"target="_blank">GroceriStar</a> as UX Designer. Looking for opportunities in UI/UX domain.
+</p>
+</section>
+
+
+<div class="row title"style="margin-top:0px;">
+
+
+<div class="col-md-12">
+<p id="ss" style="text-align:center;margin-bottom:16px;">SOFTWARE/SKILLS</p>
+
+
+<div class="col-xs-12">
+  <div class="bar"style="display:block;margin-right:auto;margin-left:auto;">
+
+<div style="margin-top:3vw;width: 90%;" class="sketch">
+  <div  class="skill-bar">Sketch/Invision</div>
+</div>
+  </div>
+  <div class="bar">
+
+<div style="margin-top:2vw;width: 70%;" class="sketch">
+  <div  class="skill-bar">Photoshop</div>
+</div>
+  </div>
+  <div class="bar">
+
+<div style="margin-top:2vw;width: 50%;" class="sketch">
+  <div  class="skill-bar">Illustrator</div>
+</div>
+  </div>
+  <div class="bar">
+
+<div style="margin-top:2vw;width: 85%;" class="sketch">
+  <div  class="skill-bar">HTML/CSS</div>
+</div>
+  </div>
+  <div class="bar">
+
+  <div style="margin-top:2vw;width: 60%;" class="sketch">
+    <div  class="skill-bar">Javascript</div>
+  </div>
+    </div>
+<div class="bar">
+
+<div style="margin-top:2vw;width: 90%;" class="sketch">
+  <div  class="skill-bar">Final Cut Pro</div>
+</div>
+  </div>
+
+</div>
+</div>
+<div class="col-xs-12">
+<p id="contact" style="text-align:center;margin-top:200px;margin-bottom:16px;">CONTACT</p>
+</div>
+<div style="">
+<div class="col-xs-5">
+  <div style="text-align:right;">
+  <i style="font-size:3vw;"class="fa fa-phone"></i>
+</div>
+</div>
+<div  class="col-xs-7">
+  <p id="num" style="font-family: HelveticaNeue;font-size: 2vw;color: #130F0D;letter-spacing: 1.73px;text-align:left;padding-left:1vw;">+91-9650073818</p>
+</div>
+</div>
+
+</div>
+
+<div class="col-md-5 col-xs-5">
+  <div style="text-align:right;">
+  <i id="postcard"style="font-size:3vw;margin-bottom:150px;"class="fa fa-envelope"></i>
+</div>
+</div>
+<div  class="col-md-7 col-xs-7">
+  <p id="num" style="font-family: HelveticaNeue;font-size: 2vw;color: #130F0D;letter-spacing: 1.73px;text-align:left;padding-left:1vw;margin-bottom:150px;"><a style="color: #130F0D;" href="mailto:masroormattu@icloud.com?Subject=Hello%20again!" target="_top">masroormattu@icloud.com</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer"class="icons-social" data-role="footer" data-position="fixed" data-corners="false" style="display:block;">
+<p class="enclose problem">
+  <a style="color:#000000;"href="https://github.com/d4rksilicon"target="_blank"><i class="fa fa-github " style="font-size:24px;"></i></a>
+  <a style="color:#000000;"href="https://www.instagram.com/masroooooor"target="_blank"><i class="fa fa-instagram " style="font-size:24px;"></i></a>
+  <a style="color:#000000;"href="https://twitter.com/MuddledMas"target="_blank"><i class="fa fa-twitter " style="font-size:24px;"></i></a>
+  <a style="color:#000000;"href="https://www.behance.net/masroor13194cc"target="_blank"><i class="fa fa-behance " style="font-size:24px;"></i></a>
+</p>
+</div>
+</div>
+
+
+</body>
+</html>
