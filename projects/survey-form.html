@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <title>Survey Form</title>
+  <style>
+  body{
+    margin:0px;
+    font-family: HelveticaNeue-Medium;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.75px;
+  }
+
+  .left-container{
+    position: fixed;
+    min-height:100vh;
+    width: 30%;
+    top:0px;
+    background-color: #ffffff;
+    padding-bottom: 80px;
+
+
+  }
+  .right-container{
+    position: absolute;
+    left:30%;
+    min-height:100vh;
+    width:70%;
+    background-color: #D8D8D8;
+    top:0px;
+  }
+  #title{
+    position: relative;
+    display: block;
+    margin:0 auto;
+    padding: 15px;
+
+    z-index: 999999;
+
+    width:70%;
+    top:150px;
+    /* top: 30%;
+    left:30%; */
+
+
+  }
+  h1{
+    font-family: HelveticaNeue-Bold;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 1.5px;
+    /* line-height: 49px; */
+    text-align: center;
+    /* SURVEY: */
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    padding: 20px;
+
+
+
+
+  }
+  .sub-title{
+    position: relative;
+
+  }
+  #f-text{
+
+    font-family: HelveticaNeue-Medium;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.75px;
+
+  }
+  :required{
+    font-family: HelveticaNeue-Medium;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.75px;
+
+  }
+  #radio-button{
+    /* Definitely: */
+  font-family: HelveticaNeue-Medium;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.68px;
+  padding-left: 10px;
+  }
+  p{
+        /* Help us to serve you: */
+    font-family: OpenSans;
+    font-size: 18px;
+    color: #5E5E5E;
+    letter-spacing: 0.75px;
+    text-align: center;
+
+  }
+  .form-container{
+    /* Rectangle 3: */
+    background: #959595;
+    padding: 40px;
+    display: block;
+    width:96%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+
+  }
+  * {
+    box-sizing: border-box;
+}
+select{
+  box-sizing: content-box;
+
+  width:90%;
+  border-radius: 4px;
+
+  resize: vertical;
+}
+
+
+input[type=text],input[type=number],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #8B8B8B;
+    color:white;
+    letter-spacing:1px
+}
+input[type=checkbox]{
+
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+::placeholder{
+  /* Enter your name: */
+font-family: HelveticaNeue-Thin;
+font-size: 14px;
+color: #CECECE;
+letter-spacing: 3px;
+text-align: justify;
+}
+
+input[type=submit] {
+    background-color: #0A14C5;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* SUBMIT: */
+    font-family: HelveticaNeue-Bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.75px;
+
+}
+
+
+input[type=submit]:hover {
+    background-color: #050C73;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-15 {
+    float: left;
+    width: 12%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.col-custom {
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.radio-text{
+  /* If given a platform: */
+font-family: HelveticaNeue;
+font-size: 18px;
+color: #FFFFFF;
+letter-spacing: 0.68px;
+text-align: justify;
+margin-top: 30px;
+width:90%;
+}
+#bio{
+  /* Select an option: */
+font-family: HelveticaNeue;
+font-size: 18px;
+color: #FFFFFF;
+letter-spacing: 0.68px;
+background-color: #6F7195;
+font-weight: normal;
+
+}
+sup{
+  color: #945252;
+}
+.radio-b{
+  /* Definitely: */
+font-family: HelveticaNeue-Medium;
+font-size: 18px;
+color: #FFFFFF;
+letter-spacing: 0.68px;
+text-align: justify;
+}
+.check-text{
+    /* Sports/Games you wan: */
+  font-family: HelveticaNeue;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.75px;
+  margin-top: 30px;
+}
+.check-opt{
+  /* Cricket: */
+font-family: HelveticaNeue;
+font-weight: lighter;
+font-size: 16px;
+color: #FFFFFF;
+letter-spacing: 0.6px;
+text-align: justify;
+padding-top: 10px;
+}
+.other{
+  /* If any other, please: */
+font-family: HelveticaNeue;
+font-size: 16px;
+color: #FFFFFF;
+letter-spacing: 0.6px;
+text-align: justify;
+text-align: right;
+}
+#other-sport{
+  width:30%;
+   border: none;
+   border-bottom: 2px solid #FFFFFF!important;
+   background: transparent;
+   box-shadow: none !important;
+   border-top: transparent !important;
+   border-left: transparent !important;
+   border-right: transparent !important;
+
+}
+input[name=other-option]:focus{
+      outline: none;
+  }
+  .center-button{
+  text-align: center;
+  margin-top: 30px;
+  }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .left-container{
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: auto;
+
+      background-color: #ffffff;
+    }
+    #title{
+      top:80px;
+    }
+    .right-container{
+      position: relative;
+      width: 100%;
+      left:0;
+      background-color: #D8D8D8;
+    }
+}
+  @media only screen and (max-width:1010px) {
+    /* p{
+      font-family: HelveticaNeue-Bold;
+      font-size: 24px;
+      color: #000000;
+      letter-spacing: 1.5px;
+      line-height: 49px;
+      text-align: center;
+
+    } */
+    .col-25, .col-75 {
+        width: 100%;
+        margin-top: 0;
+    }
+    #title{
+      padding:10px;
+    }
+
+  }
+
+
+  </style>
+  <body>
+
+    <div class="left-container">
+
+      <div id="title"><h1>SURVEY<br> FORM</h1>
+      <div class="sub-title"><p id="description">Help us to serve you better.</p>
+      </div>
+
+    </div>
+  </div>
+    <div class="right-container">
+      <div class="form-container">
+        <form id="survey-form"action="/action_page.php">
+          <div class="container-fluid">
+            <div id="name"class="row">
+       <div class="col-md-3">
+         <label id=" f-text" for="fname name-label">Name:<sup>  *</sup></label>
+       </div>
+       <div class="col-md-9">
+         <input type="text" id="fname" name="firstname" style="color:white;letter-spacing:1px"placeholder="Enter your name"required>
+       </div>
+     </div>
+     <div id="email"class="row">
+       <div class="col-md-3">
+         <label for="lname" id="f-text email-label">E-Mail:<sup>  *</sup></label>
+       </div>
+       <div class="col-md-9">
+         <input type="email" id="lname" name="lastname" placeholder="Enter your e-mail"required>
+       </div>
+     </div>
+     <div id="number"class="row">
+       <div class="col-md-3 col-sm-3">
+         <label for="lname" id="f-text number-label">Age:<sup>  *</sup></label>
+       </div>
+       <div class="col-md-2">
+         <input type="number" id="lname" name="lastname" placeholder="in yrs"min="10" max="99"required>
+       </div>
+
+       <div class="col-md-7" >
+         <label for="occupation"id="f-text">You are:<sup>  *</sup></label>
+
+       <div id="dropdown"style="display:inline-block">
+         <select id="bio" name="occupation">
+           <option value="0">Select an option</option>
+
+           <option value="student">Student</option>
+           <option value="working">Working Professional</option>
+           <option value="usa">Self Employed</option>
+           <option value="usa">Home Maker</option>
+
+         </select>
+     </div>
+     </div>
+
+     </div>
+     <div class="row">
+       <div class="col-md-8">
+         <div class="radio-text">
+           If given a platform (say Mobile app) which allows you to participate & play competitively the sport of your choice, would you sign up for it?
+         </div>
+          </div>
+          <div class="col-md-4">
+            <input class="radio-b"type="radio" name="question" id="definitely" value="definitely"><label for="definitely"id="radio-button">Definitely</label><br>
+            <input class="radio-b"type="radio" name="question" id="maybe"value="maybe"> <label for="maybe"id="radio-button">Maybe</label><br>
+            <input class="radio-b"type="radio" name="question" id="notsure"value="notsure">  <label for="notsure"id="radio-button">Not Sure</label>
+          </div>
+     </div>
+     <div class="row">
+       <div class="col-md-12">
+         <div class="check-text">
+           Sports/Games you want to play:    <span class="radio-text">(Check all that apply)</span>
+         </div>
+         </div>
+         <div class="col-md-12">
+          <div style="display:inline-block">
+           <input type="checkbox" name="sports" id="football" value="Football"><label class="check-opt radio-inline"for="football"> Football</label>
+         </div>
+         <div style="display:inline-block">
+           <input type="checkbox" name="sports" id="badminton"value="Badminton" > <label class="check-opt radio-inline"for="badminton"> Badminton</label>
+         </div>
+         <div style="display:inline-block">
+
+           <input type="checkbox" name="sports" id="tt" value="Table Tennis"> <label class="check-opt radio-inline"for="tt">Table Tennis</label>
+         </div>
+         <div style="display:inline-block">
+
+           <input type="checkbox" name="sports" id="lt"value="Lawn Tennis" ><label class="check-opt radio-inline"for="lt"> Lawn Tennis </label>
+         </div>
+         <div style="display:inline-block">
+
+           <input type="checkbox" name="sports" id="cricket" value="Cricket"><label class="check-opt radio-inline"for="cricket"> Cricket</label>
+         </div>
+         <div style="display:inline-block">
+
+           <input type="checkbox" name="sports" id="basketball"value="Basketball " ><label class=" check-opt radio-inline"for="basketball"> Basketball </label>
+        </div>
+        <div style="display:inline-block">
+
+           <input type="checkbox" name="sports" id="chess"value="Chess" ><label class="check-opt radio-inline"for="chess"> Chess </label>
+         </div>
+         <div style="display:inline-block">
+
+           <input type="checkbox" name="sports" id="hockey" value="Hockey"><label class="check-opt radio-inline"for="hockey"> Hockey</label>
+         </div>
+         <div style="display:inline-block">
+
+           <input type="checkbox" name="sports" id="baseball"value="Baseball" ><label class="check-opt radio-inline"for="baseball"> Baseball</label>
+         </div>
+
+
+         </div>
+       </div>
+       <div class="row">
+         <div class="other">
+           If any other, please specify
+           <input type="text" id="other-sport" name="other-option" >
+
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-md-7 col-sm-12 ">
+           <div class="radio-text">
+           How often do you play any outdoor game in a week ?
+         </div>
+         </div>
+         <div class="col-md-5"style="margin-top:40px;">
+           <select id="bio" name="country">
+             <option value="0">Select an option</option>
+
+             <option value="everyday">Everyday</option>
+             <option value="weekends">Weekends</option>
+             <option value="seldom">I seldom play</option>
+             <option value="never">Never</option>
+
+           </select>
+
+         </div>
+       </div>
+
+
+
+
+
+
+     <div class="row"style="margin-top:30px;">
+       <div class="col-25">
+         <label  class="radio-text" for="subject"style="margin-top: 0px;">Any special Sports related memory, you want to share about?</label>
+       </div>
+       <div class="col-75">
+         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+       </div>
+     </div>
+     <div class="row">
+
+         <div class="center-button">
+
+           <input id="submit"type="submit" value="SUBMIT">
+         </div>
+
+     </div>
+   </div>
+        </form>
+      </div>
+    </div>
+
+
+  </body>
+</html>
