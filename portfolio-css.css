@@ -21,6 +21,27 @@ body{
   height: 183px;
   object-fit: cover;
 }
+.scrolls {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 190px;
+    white-space:nowrap
+    }
+
+
+.wrapper{
+      background:#EFEFEF;
+       box-shadow: 1px 1px 10px #999;
+       margin: 0 auto;
+       position: relative;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       border-radius: 5px;
+       margin-bottom: 20px !important;
+       width: 80%;
+       padding-top: 5px;
+       display: block;
+}
 
 
 .container-fluid {
@@ -234,7 +255,7 @@ letter-spacing: 1.44px;
 }
 
 .bar {
-    width: 50%; /* Full width */
+    width: 70%; /* Full width */
     background-color: #ddd; /* Grey background */
     border-radius: 5px;
     display:block;
