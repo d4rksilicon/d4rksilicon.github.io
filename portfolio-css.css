@@ -8,7 +8,7 @@ body{
     src: url(/MoonBold.otf);
 }
 .problem {text-align:center;}
-.enclose {position: fixed;bottom:0px;width:100%;}
+.enclose {position: fixed;bottom:10px;width:100%;}
 .enclose :hover{
   color:blue;
 }
