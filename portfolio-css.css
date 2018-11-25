@@ -67,9 +67,9 @@ body{
 
 .topnav a {
    font-family: Helvetica Neue;
-   font-size: 1.2vw;
+   font-size: 18px;
     font-weight: lighter;
-    letter-spacing: 0.2vw;
+    letter-spacing: 1px;
     display: inline-block;
     color: #130F0D;
 
@@ -86,9 +86,9 @@ body{
 
 
 
-.topnav .icon {
+/* .topnav .icon {
   display: none;
-}
+} */
 
 @media screen and (max-width: 800px) {
   .profile-name{
@@ -171,17 +171,16 @@ body{
 }
 
 @media screen and (max-width: 800px) {
-  .topnav.responsive {
+/*   .topnav.responsive {
     position: relative;
-  }
-  .topnav.responsive .icon {
+  } */
+/*   .topnav.responsive .icon {
     position: relative;
 
-  }
-  .topnav.responsive a {
-    font-size: 3vw;
-    float: none;
-    display: block;
+  } */
+  .topnav  a {
+    font-size: 16px;
+    
     text-align: center;
 
   }
