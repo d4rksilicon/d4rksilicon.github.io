@@ -142,12 +142,12 @@ body{
   #svg-img{
 
   }
-  .topnav a:not(:last-child) {display: none;}
+/*   .topnav a:not(:last-child) {display: none;}
   .topnav a.icon {
 
     display: block;
     background-color: #ECE8E8;
-  }
+  } */
 }
 @media screen and (min-width: 801px) {
   .about{
@@ -181,7 +181,7 @@ body{
   .topnav  a {
     font-size: 16px;
     
-    text-align: center;
+/*     text-align: center; */
 
   }
 }
