@@ -102,13 +102,13 @@ body{
   .about{
     font-family:monospace, Helvetica Neue, AndaleMono;
     font-size: 14px;
-    letter-spacing: 0.65px;
+    letter-spacing: 0.40px;
     color: #373737;
     text-align:justify;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
   }
   #ss{
     font-size: 16px;
