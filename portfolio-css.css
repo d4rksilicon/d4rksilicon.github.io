@@ -7,6 +7,10 @@ body{
     font-family: Moon-Bold;
     src: url(/MoonBold.otf);
 }
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(/HelveticaNeue-Light.otf);
+}
 .problem {text-align:center;}
 .enclose {position: fixed;bottom:10px;width:100%;}
 .enclose :hover{
