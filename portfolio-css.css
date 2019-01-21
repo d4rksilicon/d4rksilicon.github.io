@@ -8,8 +8,9 @@ body{
     src: url(/MoonBold.otf);
 }
 @font-face {
-    font-family: HelveticaNeue;
+    font-family: "Helvetica Neue";
     src: url(/HelveticaNeue-Light.otf);
+   font-weight:lighter;
 }
 .problem {text-align:center;}
 .enclose {position: fixed;bottom:10px;width:100%;}
